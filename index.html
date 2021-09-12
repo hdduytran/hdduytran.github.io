@@ -1,198 +1,256 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="resources\css\styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="vendors/css/grid.css">
-    <script src="https://kit.fontawesome.com/71db592415.js" crossorigin="anonymous"></script>
+<div>
 
-</head>
+  These notes accompany the Stanford CS class <a href="http://cs231n.stanford.edu/">CS231n: Convolutional Neural Networks for Visual Recognition</a>. For questions/concerns/bug reports, please submit a pull request directly to our <a href="https://github.com/cs231n/cs231n.github.io">git repo</a>.
+  <br>
+  <!-- For questions/concerns/bug reports contact <a href="http://cs.stanford.edu/people/jcjohns/">Justin Johnson</a> regarding the assignments, or contact <a href="http://cs.stanford.edu/people/karpathy/">Andrej Karpathy</a> regarding the course notes. You can also submit a pull request directly to our <a href="https://github.com/cs231n/cs231n.github.io">git repo</a>. -->
+  <!-- <br> -->
+  <!-- We encourage the use of the <a href="https://hypothes.is/">hypothes.is</a> extension to annote comments and discuss these notes inline. -->
+</div>
 
-<body>
-    <header>
-        <a href="#"><img class="logo" src="./resources/img/logo.png" alt="logo"> </a>
-        <ul class="main-nav">
-            <li><a href="#">How clients think</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="clearfix"></div>
-        <div class="row">
-            <div class="heading-main-box">
-                <h1>
-                    We will study <br> English together. <br>
-                    So join with us.
-                </h1>
-                <a href="#" class="btn">Tell me more</a>
-                <a href="#" class="btn">Join us</a>
-            </div>
-        </div>
-    </header>
-    <section class="about-section">
-        <div class="row">
-            <h2>About us</h2>
-            <p class="p-long">
-                We are people that are studying English by ourselves, we believe that you don’t need to pay so much
-                money for being good at English, we’re here to help you
-            </p>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-4 about-picture">
-                <img src="./resources/img/activities1.jpeg" alt="activities1">
-                <p class="picture-title">
-                    Team working
-                </p>
-            </div>
-            <div class="col span-1-of-4 about-picture">
-                <img src="./resources/img/activities2.jpeg" alt="activities2">
-                <p class="picture-title">
-                    Funny class
-                </p>
-            </div>
-            <div class="col span-1-of-4 about-picture">
-                <img src="./resources/img/activities3.jpeg" alt="activities3">
-                <p class="picture-title">
-                    Be confident
-                </p>
-            </div>
-            <div class="col span-1-of-4 about-picture">
-                <img src="./resources/img/activities4.jpeg" alt="activities4">
-                <p class="picture-title">
-                    All our friends
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="products-section">
-        <h2>Products</h2>
-        <div class="row">
-            <div class="col span-1-of-3">
-                <div class="product-box">
-                    <h3>Pronounciation class</h3>
-                    <p class="product-price">19$ <span>/ month</span></p>
-                    <ul>
-                        <li><i class="fas fa-check small-icon"></i>Native voices</li>
-                        <li><i class="fas fa-check small-icon"></i>Master IPA</li>
-                    </ul>
-                    <a href="#" class="btn">Join us</a>
-                </div>
-            </div>
-            <div class="col span-1-of-3">
-                <div class="product-box">
-                    <h3>Speaking class</h3>
-                    <p class="product-price">25$ <span>/ month</span></p>
-                    <ul>
-                        <li><i class="fas fa-check small-icon"></i>Native speaking</li>
-                        <li><i class="fas fa-check small-icon"></i>Speaking naturally</li>
-                    </ul>
-                    <a href="#" class="btn">Join us</a>
-                </div>
-            </div>
-            <div class="col span-1-of-3">
-                <div class="product-box">
-                    <h3>Listening class</h3>
-                    <p class="product-price">19$ <span>/ month</span></p>
-                    <ul>
-                        <li><i class="fas fa-check small-icon"></i>Native speech</li>
-                        <li><i class="fas fa-check small-icon"></i>Hearing English Clearly</li>
-                    </ul>
-                    <a href="#" class="btn">Join us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="testimonials-section">
-        <h2>testimonials</h2>
-        <div class="row">
-            <div class="col span-1-of-3">
-                <blockquote>
-                    The course is very helpful, I can speak English fluently and I think The SF English became my second family, I love everyone very much. Thank you
-                    <cite>
-                        <img src="/resources/img/person5.jpeg" alt=""> Nguyen Chem Gio
-                    </cite>
-                </blockquote>
-            </div>
-            <div class="col span-1-of-3">
-                <blockquote>
-                    I believe that who came to This English centre would love this place as I did, when the course finished, I feel sad because studying in that place I always felt funny
-                    <cite>
-                        <img src="/resources/img/person2.jpeg" alt=""> Tran Vo Van
-                    </cite>
-                </blockquote>
-            </div>
-            <div class="col span-1-of-3">
-                <blockquote>
-                    Trust me, you can master English just by joining this class, I did, so I believe that you can too. Hope that one day, you can come and join in this class
-                    <cite>
-                        <img src="/resources/img/person4.jpeg" alt=""> Le Du Do
-                    </cite>
-                </blockquote>
-            </div>
-        </div>
-    </section>
-    <section class="sponsors-section">
-        <h2>sponsors</h2>
-        <div class="row">
-            <ul class="sponsors-showcase">
-                <li>
-                    <figure>
-                        <img class="logo-sponsor" src="resources/img/barcelona_logo.png" alt="barcelona">
-                        <figcaption>
-                            Barcelona
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img class="logo-sponsor" src="resources/img/tottenham_logo.png" alt="tottenham_logo">
-                        <figcaption>
-                            Tottenham
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img class="logo-sponsor" src="resources/img/bayern_logo.png" alt="bayern_logo">
-                        <figcaption>
-                            Bayern
-                        </figcaption>
-                    </figure>
-                </li>
-                <div class="clearfix"></div>
-                <li>
-                    <figure>
-                        <img class="logo-sponsor" src="resources/img/real_logo.png" alt="real_logo">
-                        <figcaption>
-                            Real
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img class="logo-sponsor" src="resources/img/juventus_logo.png" alt="juventus_logo">
-                        <figcaption>
-                            Juventus
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img class="logo-sponsor" src="resources/img/mctcity_logo.png" alt="Manchester City">
-                        <figcaption>
-                            Manchester City
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </div>
-    </section>
-</body>
+<div class="home">
+  <div class="materials-wrap">
+    <div class="module-header">Spring 2021 Assignments</div>
+      <div class="materials-item">
+        <a href="assignments2021/assignment1/">Assignment #1: Image Classification, kNN, SVM, Softmax, Fully Connected Neural Network</a>
+      </div>
+      <div class="materials-item">
+        <a href="assignments2021/assignment2/">Assignment #2: Fully Connected and Convolutional Nets, Batch Normalization, Dropout, Frameworks</a>
+      </div>
+      <div class="materials-item">
+        <a href="assignments2021/assignment3/">Assignment #3: Image Captioning with RNNs and Transformers, Network Visualization,
+          Generative Adversarial Networks, Self-Supervised Contrastive Learning</a>
+      </div>
+  </div>
+<!--
+    <div class="materials-item">
+      <a href="assignments2019/assignment2/">
+        Assignment #2: Fully Connected Nets, Batch Normalization, Dropout,
+        Convolutional Nets
+      </a>
+    </div>
 
-</html>
+    <div class="materials-item">
+      <a href="assignments2019/assignment3/">
+        Assignment #3: Image Captioning with Vanilla RNNs, Image Captioning
+  with LSTMs, Network Visualization, Style Transfer, Generative Adversarial Networks
+      </a>
+    </div> -->
+    <!--
+    <div class="module-header">Spring 2018 Assignments</div>
+
+    <div class="materials-item">
+      <a href="assignments2018/assignment1/">
+        Assignment #1: Image Classification, kNN, SVM, Softmax, Neural Network
+      </a>
+    </div>
+
+    <div class="materials-item">
+      <a href="assignments2018/assignment2/">
+        Assignment #2: Fully-Connected Nets, Batch Normalization, Dropout,
+        Convolutional Nets
+      </a>
+    </div>
+
+    <div class="materials-item">
+      <a href="assignments2018/assignment3/">
+        Assignment #3: Image Captioning with Vanilla RNNs, Image Captioning
+        with LSTMs, Network Visualization, Style Transfer, Generative Adversarial Networks
+      </a>
+    </div>
+    -->
+
+    <!--
+    <div class="module-header">Winter 2016 Assignments</div>
+
+    <div class="materials-item">
+      <a href="assignments2016/assignment1/">
+        Assignment #1: Image Classification, kNN, SVM, Softmax, Neural Network
+      </a>
+    </div>
+
+    <div class="materials-item">
+      <a href="assignments2016/assignment2/">
+        Assignment #2: Fully-Connected Nets, Batch Normalization, Dropout,
+        Convolutional Nets
+      </a>
+    </div>
+
+    <div class="materials-item">
+      <a href="assignments2016/assignment3/">
+        Assignment #3: Recurrent Neural Networks, Image Captioning,
+        Image Gradients, DeepDream
+      </a>
+    </div>
+    -->
+
+    <!--
+    <div class="module-header">Winter 2015 Assignments</div>
+
+    <div class="materials-item">
+      <a href="assignment1/">
+        Assignment #1: Image Classification, kNN, SVM, Softmax
+      </a>
+    </div>
+
+    <div class="materials-item">
+      <a href="assignment2/">
+        Assignment #2: Neural Networks, ConvNets I
+      </a>
+    </div>
+
+    <div class="materials-item">
+      <a href="assignment3/">
+        Assignment #3: ConvNets II, Transfer Learning, Visualization
+      </a>
+    </div>
+  -->
+
+    <div class="module-header">Module 0: Preparation</div>
+
+    <div class="materials-item">
+      <a href="setup-instructions/">
+        Software Setup
+      </a>
+    </div>
+
+    <div class="materials-item">
+      <a href="python-numpy-tutorial/">
+        Python / Numpy Tutorial (with Jupyter and Colab)
+      </a>
+    </div>
+<!--
+    <div class="materials-item">
+      <a href="terminal-tutorial/">
+        Terminal.com Tutorial
+      </a>
+    </div>
+-->
+    <div class="materials-item">
+      <a href="https://github.com/cs231n/gcloud">
+        Google Cloud Tutorial
+      </a>
+    </div>
+    <!-- <div class="materials-item">
+      <a href="aws-tutorial/">
+        AWS Tutorial
+      </a>
+    </div> -->
+
+    <!-- hardcoding items here to force a specific order -->
+    <div class="module-header">Module 1: Neural Networks</div>
+
+    <div class="materials-item">
+      <a href="classification/">
+        Image Classification: Data-driven Approach, k-Nearest Neighbor, train/val/test splits
+      </a>
+      <div class="kw">
+        L1/L2 distances, hyperparameter search, cross-validation
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="linear-classify/">
+         Linear classification: Support Vector Machine, Softmax
+      </a>
+      <div class="kw">
+        parameteric approach, bias trick, hinge loss, cross-entropy loss, L2 regularization, web demo
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="optimization-1/">
+        Optimization: Stochastic Gradient Descent
+      </a>
+      <div class="kw">
+        optimization landscapes, local search, learning rate, analytic/numerical gradient
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="optimization-2/">
+        Backpropagation, Intuitions
+      </a>
+      <div class="kw">
+        chain rule interpretation, real-valued circuits, patterns in gradient flow
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="neural-networks-1/">
+          Neural Networks Part 1: Setting up the Architecture
+      </a>
+      <div class="kw">
+        model of a biological neuron, activation functions, neural net architecture, representational power
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="neural-networks-2/">
+          Neural Networks Part 2: Setting up the Data and the Loss
+      </a>
+      <div class="kw">
+          preprocessing, weight initialization, batch normalization, regularization (L2/dropout), loss functions
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="neural-networks-3/">
+        Neural Networks Part 3: Learning and Evaluation
+      </a>
+      <div class="kw">
+        gradient checks, sanity checks, babysitting the learning process, momentum (+nesterov), second-order methods, Adagrad/RMSprop, hyperparameter optimization, model ensembles
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="neural-networks-case-study/">
+          Putting it together: Minimal Neural Network Case Study
+      </a>
+      <div class="kw">
+        minimal 2D toy data example
+      </div>
+    </div>
+
+    <div class="module-header">Module 2: Convolutional Neural Networks</div>
+
+    <div class="materials-item">
+      <a href="convolutional-networks/">
+        Convolutional Neural Networks: Architectures, Convolution / Pooling Layers
+      </a>
+      <div class="kw">
+          layers, spatial arrangement, layer patterns, layer sizing patterns, AlexNet/ZFNet/VGGNet case studies, computational considerations
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="understanding-cnn/">
+        Understanding and Visualizing Convolutional Neural Networks
+      </a>
+      <div class="kw">
+        tSNE embeddings, deconvnets, data gradients, fooling ConvNets, human comparisons
+      </div>
+    </div>
+
+    <div class="materials-item">
+      <a href="transfer-learning/">
+        Transfer Learning and Fine-tuning Convolutional Neural Networks
+      </a>
+    </div>
+
+    <div class="module-header">Student-Contributed Posts</div>
+
+    <div class="materials-item">
+      <a href="choose-project/">
+        Taking a Course Project to Publication
+      </a>
+      <a href="rnn/">
+        Recurrent Neural Networks
+      </a>
+    </div>
+
+  </div>
+</div>
